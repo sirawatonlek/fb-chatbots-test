@@ -33,6 +33,7 @@ export default class Store {
    * @returns {Object} Value found in store
    */
   getFirst() {
+    var iterator1 = this.data.values();
     return iterator1.next().value;
   }
 
