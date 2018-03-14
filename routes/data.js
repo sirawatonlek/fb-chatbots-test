@@ -20,3 +20,5 @@ router.get('/', (res) => {
   res.setHeader('Content-Type', 'application/json');
   res.send(userJSON);
 });
+
+export default router;
