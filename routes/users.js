@@ -28,15 +28,6 @@ router.get('/:userID', ({params: {userID}}, res) => {
   res.send(userJSON);
 });
 
-router.get('/getAll', (res) => {
-  var iterator1 = UserStore.values();
-  const userJSON = JSON.stringify(iterator1.next().value);
-
-  console.log(`GET User response: ${userJSON}`);
-
-  res.setHeader('Content-Type', 'application/json');
-  res.send(userJSON);
-});
 
 /**
  * Return gifts based on preferences,

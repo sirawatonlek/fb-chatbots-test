@@ -20,6 +20,7 @@ import ThreadSetup from './messenger-api-helpers/thread-setup';
 import gifts from './routes/gifts';
 import index from './routes/index';
 import users from './routes/users';
+import data from './routes/data';
 import webhooks from './routes/webhooks';
 import terms from './routes/terms';
 
@@ -56,6 +57,7 @@ app.use(logger('dev'));
 
 app.use('/', index);
 app.use('/users', users);
+app.use('/data', data);
 app.use('/gifts', gifts);
 app.use('/webhook', webhooks);
 app.use('/terms', terms);
