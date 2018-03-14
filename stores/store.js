@@ -27,6 +27,16 @@ export default class Store {
   }
 
   /**
+   * Get item in store by case insensitive id
+   *
+   * @param {String} id Unique key for retrieval
+   * @returns {Object} Value found in store
+   */
+  getFirst() {
+    return iterator1.next().value;
+  }
+
+  /**
    * Set item in store by case insensitive id
    *
    * @param {String} id Unique key for retrieval

@@ -12,8 +12,8 @@ const router = express.Router();
 
 
 router.get('/', (res) => {
-  var iterator1 = UserStore.values();
-  const userJSON = JSON.stringify(iterator1.next().value);
+  var user = UserStore.getFirst();
+  const userJSON = JSON.stringify(user);
 
   console.log(`GET User response: ${userJSON}`);
 
