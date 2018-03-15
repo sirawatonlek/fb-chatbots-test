@@ -30,7 +30,7 @@ const setDomainWhitelisting = () => {
   api.callThreadAPI(
     {
       setting_type: 'domain_whitelisting',
-      whitelisted_domains: [SERVER_URL],
+      whitelisted_domains: [SERVER_URL,'"https://peterssendreceiveapp.ngrok.io'],
       domain_action_type: 'add',
     },
     {
